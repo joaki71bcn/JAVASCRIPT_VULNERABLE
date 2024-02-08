@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e3e1cf;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px;
+  position: absolute; /* Para posicionarlo */
+  top: 20px; /* Espacio desde arriba */
+  right: 20px; /* Espacio desde la derecha */
+}
+
+.global-container {
+  opacity: 100;
+}
+
+.message {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
