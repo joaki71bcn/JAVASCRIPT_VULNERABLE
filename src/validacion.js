@@ -3,6 +3,9 @@ const express = require('express'); //  Importa Express para creacion de aplicac
 const app = express(); // instancia de Express
 const mysql = require('mysql'); // Importa el modulo mysql
 
+// analiza express.json para analizar el cuerpo de las solicitudes POST como JSON
+app.use(express.json()) 
+
 
 // conexión a la BBDD Mysql
 const connection = mysql.createConnection({
@@ -23,6 +26,7 @@ connection.connect((err) => {
 
 
 // Recepción de la petición POST que contiene el usuario y la contraseña 
+
 app.post('/api/login', (req, res) => {
 	const { username, password} = req.body;
 
@@ -38,4 +42,4 @@ app.post('/api/login', (req, res) => {
 	});
 		
 });
-test
+
