@@ -24,9 +24,18 @@ connection.connect((err) => {
 
 // Recepción de la petición POST que contiene el usuario y la contraseña 
 app.post('/api/login', (req, res) => {
-	req.body;
-	res.status(200).send({message: 'Inicio de sesión exitoso'});
-	res.status(401).send({message: 'Credenciales incorrectas'});
-};
+	const { username, password} = req.body;
 
-
+	connection.query('SELECT username, password FROM usuarios WHERE username= ? AND password= ?', [username, password],(err, result) => {
+		// Manejo del error
+		if (err) {
+			res.status(500).send({message: 'Error interno del servidor'})
+		} else if (result.length > 0) {
+			res.status(200).send({message: 'Inicio de sesión exitoso'});	
+		} else {
+			res.status(401).send({message: 'Credenciales incorrectas'});
+        }
+	});
+		
+});
+test
