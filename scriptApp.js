@@ -1,19 +1,21 @@
-// Login
-function validateLogin() {
+"use strict";
+
+// Pongo foco directamente en username
+let userBox = document.getElementById("username");
+userBox.focus();
+
+async function validateLogin() {
   // asigno variables que recogo de formulario para validacion
-  let usernameValue = document.getElementById("username").value;
-  let passwordValue = document.getElementById("password").value;
-  let mensajeError = document.getElementById("errorUsuario");
+  const usernameValue = document.getElementById("username").value;
+  const passwordValue = document.getElementById("password").value;
+  const mensajeError = document.getElementById("errorUsuario");
 
   // Validaciones user y pwd
   if (!usernameValue || !passwordValue) {
     mensajeError.textContent = "Introduce usuario y password";
-    // alert("Introduce usuario y password");
-
     return;
   } else if (passwordValue.length < 4) {
-    // alert("Password menor de 4 caracteres");
-    mensajeError.textContent = "Password menor de 4 caracteres";
+    mensajeError.textContent = "Password ha de tener un mínimo de 4 caracteres";
     return;
   }
 
@@ -23,27 +25,30 @@ function validateLogin() {
     password: passwordValue,
   };
 
-  // convertir a json
-  let jsonUsuario = JSON.stringify(datosUsuario);
-  console.log(jsonUsuario);
+  try {
+    // envía la petición POST al servidor
+    const response = await fetch("/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(datosUsuario),
+    });
 
-  // configurar peticion ajax a mysql
-  const xhr = new XMLHttpRequest();
-  xhr.open("POST", "/api/login", true);
-  xhr.setRequestHeader("Content-Type", "application/json");
-
-  // funcion para manejar la respuesta del servidor
-  xhr.onload = function () {
-    if (xhr.status === 200) {
-      setUserCookie(usernameValue);
+    if (response.ok) {
+      console.log("Usuario existe");
+      // setUserCookie(usernameValue);
       // quitar la opacidad de la parte de abajo de la aplicacion
-      window.localtion.href = "/secondScreen.html"; // pdte cambiar
+      // window.location.href = "/secondScreen.html"; // pdte cambiar
       // el .global-container donde pondremos pintaremos la aplicacion
+    } else if (response.status === 401) {
+      mensajeError.textContent = "Credenciales incorrectas";
     } else {
       // Si la respuesta no es exitosa mostrar error
-      // alert("Error al iniciar sesión" + xhr.responseText);
-      mensajeError.textContent = "Error al iniciar sesión" + xhr.responseText;
+      mensajeError.textContent =
+        "Error al iniciar sesión: " + response.statusText;
     }
-  };
-  xhr.send(jsonUsuario);
+  } catch (error) {
+    console.error("Error en la petición:", error);
+  }
 }

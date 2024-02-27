@@ -16,7 +16,7 @@ body {
   box-shadow: 0 0 10px;
   position: absolute; /* Para posicionarlo */
   top: 20px; /* Espacio desde arriba */
-  right: 20px; /* Espacio desde la derecha */
+  right: 20px; /*Espacio desde la derecha */
 }
 
 .global-container {
@@ -24,7 +24,23 @@ body {
 }
 
 .message {
-  position: absolute;
+  /* position: absolute;
   top: 20px;
-  left: 20px;
+  left: 20px; */
+  position: absolute;
+  top: 120px; /* 20px de margen adicional para evitar superposición */
+  /* left: 20px; */
+  width: 300px;
+  height: 50px;
+  /* background-color: #f0f0f0; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 0 10px; */
+  text-align: center;
+  line-height: 50px;
+}
+
+.error-message {
+  display: block;
+  color: red;
+  margin-top: 10px; /* Espacio entre el último campo del formulario y el mensaje de error */
 }

@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-    <div class="message">Aplicacion en construccion JA y ChatGPT</div>
-
     <div class="login-container">
       <form id="loginForm">
         <label for="username">Usuario:</label>
@@ -15,11 +13,12 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required />
         <button type="button" onclick="validateLogin()">Iniciar Sesión</button>
+        <span id="errorUsuario" class="error-message"></span>
       </form>
     </div>
+    <div class="message">Aplicacion en construccion JA y ChatGPT</div>
 
     <div class="global-container"></div>
-      <span id="errorUsuario" style="color: red;>"</span>
 
     <script src="scriptApp.js"></script>
   </body>
