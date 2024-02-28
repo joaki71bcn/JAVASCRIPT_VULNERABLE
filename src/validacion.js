@@ -5,7 +5,6 @@ const mysql = require('mysql'); // Importa el modulo mysql
 const morgan =  require('morgan'); // Para manejo de logs
 const logger = require('../winstonConfig'); // fichero configuracion de winston, manejo de morgan
 const path = require('path'); // para acceder a logs desde el frontend
-
 // Servir los archivos de log solo en modo desarrollo
 logger.info('Aplicación iniciada');
 if (process.env.NODE_ENV === 'development') {
@@ -41,7 +40,8 @@ connection.connect((err) => {
 	console.log('Conectando a la base de datos con el ID ' + connection.threadId);
 });
 
-
+// analiza express.json para analizar el cuerpo de las solicitudes POST como JSON
+app.use(express.json())
 
 // Recepción de la petición POST que contiene el usuario y la contraseña 
 app.post('/api/login', async (req, res) => {
