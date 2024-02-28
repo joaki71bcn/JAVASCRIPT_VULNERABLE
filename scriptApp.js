@@ -27,7 +27,7 @@ async function validateLogin() {
 
   try {
     // envía la petición POST al servidor
-    const response = await fetch("/api/login", {
+    const response = await fetch("http://192.168.15.150:3000/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
