@@ -8,11 +8,11 @@ const path = require('path'); // para acceder a logs desde el frontend
 // Servir los archivos de log solo en modo desarrollo
 logger.info('Aplicación iniciada');
 if (process.env.NODE_ENV === 'development') {
-	app.use('/logs', express.static(path.join(__dirname, 'logs')));
+	app.use('logs', express.static(path.join(__dirname, 'logs')));
 };
 
 
-// Configuracon de morgan para usar winston
+// Configuracion de morgan para usar winston
 app.use(morgan('combined', { stream: { write: message => logger.info(message.trim())}}));
 
 // Rutas middleware-backend
@@ -21,7 +21,33 @@ app.listen(3000, () => {
 });
 
 // analiza express.json para analizar el cuerpo de las solicitudes POST como JSON
-app.use(express.json()) 
+app.use(express.json());
+
+// Agregar estado 200 y encabezados adecuados a solicitudes OPTIONS
+app.options('*', (req, res) => {
+	const origin = req.headers.origin || null;
+  res.header('Access-Control-Allow-Origin', origin);
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  res.sendStatus(200);
+});
+
+// Agregar las cabeceras CORS para permitir solo las direcciones IP especificadas
+app.use((req, res, next) => {
+    const allowedOrigins = ['http://192.168.15.134', 'http://192.168.15.150','http://127.0.0.1'];
+    const origin = req.headers.origin || null;
+
+    if (allowedOrigins.includes(origin)) {
+        res.header('Access-Control-Allow-Origin', origin);
+        res.header('Access-Control-Allow-Credentials', 'true');
+    }
+
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    next();
+
+});
 
 
 // conexión a la BBDD Mysql

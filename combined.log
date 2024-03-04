@@ -6,3 +6,38 @@
 {"level":"info","message":"Aplicación iniciada"}
 {"level":"info","message":"Aplicación iniciada"}
 {"level":"info","message":"Aplicación iniciada"}
+{"level":"info","message":"Aplicación iniciada"}
+{"level":"info","message":"Aplicación iniciada"}
+2024-02-29T15:32:22.930Z info: Aplicación iniciada
+2024-02-29T15:33:04.917Z info: ::ffff:192.168.15.134 - - [29/Feb/2024:15:33:04 +0000] "OPTIONS /api/login HTTP/1.1" 200 4 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-02-29T15:33:51.760Z info: ::ffff:192.168.15.134 - - [29/Feb/2024:15:33:51 +0000] "OPTIONS /api/login HTTP/1.1" 200 4 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-02-29T15:34:46.021Z info: ::ffff:192.168.15.134 - - [29/Feb/2024:15:34:46 +0000] "OPTIONS /api/login HTTP/1.1" 200 4 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-02-29T15:36:45.323Z info: ::ffff:192.168.15.134 - - [29/Feb/2024:15:36:45 +0000] "OPTIONS /api/login HTTP/1.1" 200 4 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-02-29T15:46:34.910Z info: Aplicación iniciada
+2024-02-29T15:46:44.579Z info: ::ffff:192.168.15.134 - - [29/Feb/2024:15:46:44 +0000] "OPTIONS /api/login HTTP/1.1" 200 4 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T15:04:00.549Z info: Aplicación iniciada
+2024-03-04T15:04:15.485Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:15:04:15 +0000] "OPTIONS /api/login HTTP/1.1" 200 4 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:03:51.837Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:03:51 +0000] "OPTIONS /api/login HTTP/1.1" 200 4 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:09:21.904Z info: Aplicación iniciada
+2024-03-04T16:09:45.067Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:09:45 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:12:51.869Z info: Aplicación iniciada
+2024-03-04T16:13:49.333Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:13:49 +0000] "OPTIONS /api/login HTTP/1.1" 500 1307 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:17:26.437Z info: Aplicación iniciada
+2024-03-04T16:17:33.102Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:17:33 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:22:30.318Z info: Aplicación iniciada
+2024-03-04T16:22:38.514Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:22:38 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:25:35.887Z info: Aplicación iniciada
+2024-03-04T16:26:32.899Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:26:32 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:26:51.934Z info: Aplicación iniciada
+2024-03-04T16:26:57.086Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:26:57 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:27:06.894Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:27:06 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:28:52.144Z info: Aplicación iniciada
+2024-03-04T16:28:58.946Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:28:58 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:37:05.242Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:37:05 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0"
+2024-03-04T16:39:18.364Z info: Aplicación iniciada
+2024-03-04T16:39:28.815Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:39:28 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:40:45.670Z info: Aplicación iniciada
+2024-03-04T16:40:54.041Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:40:54 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:40:54.473Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:40:54 +0000] "POST /api/login HTTP/1.1" 200 39 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:41:17.995Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:41:17 +0000] "OPTIONS /api/login HTTP/1.1" 200 2 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+2024-03-04T16:41:18.004Z info: ::ffff:192.168.15.134 - - [04/Mar/2024:16:41:18 +0000] "POST /api/login HTTP/1.1" 200 39 "http://127.0.0.1:5500/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
