@@ -33,6 +33,8 @@ async function validateLogin() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(datosUsuario),
+      mode: "cors",
+      credentials: "include",
     });
 
     if (response.ok) {
